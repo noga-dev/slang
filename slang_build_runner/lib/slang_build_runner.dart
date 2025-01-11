@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:build/build.dart';
 import 'package:dart_style/dart_style.dart';
 import 'package:glob/glob.dart';
+import 'package:pub_semver/pub_semver.dart';
 // ignore: implementation_imports
 import 'package:slang/src/builder/builder/raw_config_builder.dart';
 // ignore: implementation_imports
@@ -83,6 +84,7 @@ class I18nBuilder implements Builder {
     FileUtils.createMissingFolders(filePath: outputFilePath);
 
     final formatter = DartFormatter(
+      languageVersion: Version.none,
       pageWidth: config.format.width,
     );
 

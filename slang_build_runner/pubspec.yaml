@@ -8,8 +8,9 @@ environment:
 
 dependencies:
   build: ^2.2.1
-  dart_style: ^2.3.0
+  dart_style: ^3.0.1
   glob: ^2.0.2
+  pub_semver: ^2.1.5
 
   # Use a tight version to ensure that all features are available
   slang: '>=4.4.0 <4.5.0'
